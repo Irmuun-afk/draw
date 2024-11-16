@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw app</title>
+    <style>
+        .nav{
+            width: 550px;
+            height: 50px;
+            background-color: aliceblue;
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center ;
+        }
+        .clr{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: black;
+            margin-right: 5px;
+            border: 3px solid #fff;
+            cursor: pointer;
+        }
+        .clr:nth-child(1){
+            background-color: #000;
+        }
+        .clr:nth-child(2){
+            background-color: red;
+        }
+        .clr:nth-child(3){
+            background-color: green;
+        }
+        .clr:nth-child(4){
+            background-color: blue;
+        }
+        .clr:nth-child(5){
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- # -> id, .-> class -->
+    <canvas id="canvas"></canvas>
+    <div class="nav">
+       <div class="clr" data-clr="#000"></div>
+       <div class="clr" data-clr="red"></div>
+       <div class="clr" data-clr="green"></div>
+       <div class="clr" data-clr="blue"></div>
+       <div class="clr" data-clr="yellow"></div>
+       <select name="" class="sel">
+        <option>Select line's size</option>
+        <option>5</option>
+        <option>10</option>
+        <option>15</option>
+        <option>20</option>
+        <option>25</option>
+        <option>30</option>
+        <option>35</option>
+        <option>40</option>
+        <option>45</option>
+        <option>50</option>
+        <option>55</option>
+        <option>60</option>
+        <option>65</option>
+        <option>70</option>
+        <option>75</option>
+        <option>80</option>
+        <option>85</option>
+        <option>90</option>
+        <option>95</option>
+        <option>100</option>
+       </select>
+       <button class="select">Select</button>
+       <input type="color" class="input">
+       <button class="sele">Select</button>
+       <button class="clear">clear</button>
+       <button class="save">save</button>
+    </div>
+    <script src="13.js"></script>
+</body>
+</html>
